@@ -1,0 +1,62 @@
+name: Bug report
+description: Something went wrong in the Eyes of Heaven PC port.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing! The fastest way to a fix:
+        1. Open **Eyes of Heaven.exe** and click **Report a problem**. It saves a zip on your Desktop
+           (`EoH-report-....zip`) with the game's logs, your settings and your PC's details.
+           Your Windows user name is removed and no game files are in it.
+        2. Attach that zip below (drag it into the box).
+
+        Please don't attach or link any game files, and never ask for them here.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+      placeholder: "Example: the game froze on the loading screen after picking Jotaro vs DIO in Free Battle."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      description: The steps, as exactly as you can. Say if it happens every time or only sometimes.
+      placeholder: |
+        1. Start the game
+        2. Free Battle -> ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: The report zip
+      description: Drag the EoH-report-....zip from your Desktop into this box. Screenshots or a short video help too.
+    validations:
+      required: true
+  - type: dropdown
+    id: antialiasing
+    attributes:
+      label: Anti-aliasing setting
+      description: Shown in the launcher. If the problem is about the picture, does it also happen with Off?
+      options:
+        - NVIDIA DLSS
+        - AMD FSR 4
+        - AMD FSR 3.1
+        - SMAA
+        - FXAA
+        - "Off"
+        - I don't know
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Port version
+      description: At the bottom of the launcher window, e.g. v0.1.0-beta.1.
+    validations:
+      required: false
