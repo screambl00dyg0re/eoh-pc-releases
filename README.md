@@ -1,6 +1,6 @@
 <div align="center">
 
-# JoJo's Bizarre Adventure: Eyes of Heaven, PC port
+# JoJo's Bizarre Adventure: Eyes of Heaven PC port
 
 An unofficial, free fan port of the PS4 game to Windows. It runs the original game code natively on your PC, at 60 FPS, with modern anti-aliasing and upscaling.
 
